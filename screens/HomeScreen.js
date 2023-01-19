@@ -43,11 +43,8 @@ function HomeScreen() {
 
       {/* ---Body--- */}
       <ScrollView className='bg-gray-100'
-        contentContainerStyle={{
-          paddingBottom: 100,
-        }}
+        contentContainerStyle={{ paddingBottom: 100,}}
       >
-        {/* ---Categories--- */}
         <Categories />
       </ScrollView>
 
