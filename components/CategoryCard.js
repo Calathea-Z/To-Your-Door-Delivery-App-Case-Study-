@@ -8,7 +8,7 @@ const CategoryCard = ({ title, imgUrl }) => {
       <Image source={{uri: imgUrl}}
         className='h-20 w-20 rounded'
       />
-        <Text className='absolute bottom-1 left-1 text-white font-bold'>
+        <Text className='absolute bottom-1 left-1 text-amber-200 font-bold'>
           {title}
         </Text>
     </TouchableOpacity>
