@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native';
 import React, { useLayoutEffect } from 'react';
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 import { useNavigation } from '@react-navigation/native'
 import { UserIcon, ChevronDownIcon, MagnifyingGlassIcon, AdjustmentsVerticalIcon } from 'react-native-heroicons/outline';
 
@@ -47,9 +48,16 @@ function HomeScreen() {
       >
         <Categories />
         <FeaturedRow 
-          title="Featured"
-          description="Paid placements from our partners"
-          featuredCategory='Featured'
+          title="HOT, Fresh pizza!"
+          description="Gourmet pizza fresh out the oven at 500 degrees"
+        />
+        <FeaturedRow 
+          title="Cheap Beer"
+          description="Yum BEER"
+        />
+        <FeaturedRow 
+          title="Even Cheaper Tacos"
+          description="Support your local pizza / taco shop! 
         />
       </ScrollView>
 
