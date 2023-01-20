@@ -47,17 +47,20 @@ function HomeScreen() {
         contentContainerStyle={{ paddingBottom: 100,}}
       >
         <Categories />
-        <FeaturedRow 
+        <FeaturedRow
+          id='1'
           title="HOT, Fresh pizza!"
           description="Gourmet pizza fresh out the oven at 500 degrees"
         />
-        <FeaturedRow 
+        <FeaturedRow
+          id='2' 
           title="Cheap Beer"
           description="Yum BEER"
         />
-        <FeaturedRow 
+        <FeaturedRow
+          id='4' 
           title="Even Cheaper Tacos"
-          description="Support your local pizza / taco shop! 
+          description="Support your local pizza / taco shop!" 
         />
       </ScrollView>
 

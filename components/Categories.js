@@ -12,14 +12,14 @@ const Categories = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
     >
-        <CategoryCard img='https://links.papareact.com/gn7' title='Testing' />
-        <CategoryCard img='https://links.papareact.com/gn7' title='Testing'/>
-        <CategoryCard img='https://links.papareact.com/gn7' title='Testing'/>
-        <CategoryCard img='https://links.papareact.com/gny' title='test'/>
-        <CategoryCard img='https://links.papareact.com/gny' title='test'/>
-        <CategoryCard img='https://links.papareact.com/gny' title='test'/>
-        <CategoryCard img='https://links.papareact.com/gny' title='test'/>
-        <CategoryCard img='https://links.papareact.com/gny' title='test'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='Testing' />
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='Testing'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='Testing'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='test'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='test'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='test'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='test'/>
+        <CategoryCard imgUrl='https://links.papareact.com/gn7' title='test'/>
     </ScrollView>
   );
 };
