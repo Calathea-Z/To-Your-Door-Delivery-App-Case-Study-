@@ -27,9 +27,6 @@ import client from '../sanity';
     });
 }, []);
 
-console.log("hit", restaurants);
-
-
    return (
     <View>
      <View className='mt-4 flex-row items-center justify-between px-4'>
@@ -54,8 +51,8 @@ console.log("hit", restaurants);
             address={restaurant.address}  
             title={restaurant.name}
             dishes={restaurant.dishes}
-            genre={restaurant.rating}
-            shortDescription={restaurant.short_description}
+            rating={restaurant.rating}
+            short_description={restaurant.short_description}
             genre={restaurant.type?.name}
             long={restaurant.long}
             lat={restaurant.lat}
