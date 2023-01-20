@@ -33,6 +33,30 @@ import RestaurantCard from './RestaurantCard';
         long={20}
         lat={10}
          />
+         <RestaurantCard
+        id='123'
+        imgUrl='https://links.papareact.com/gn7'
+        title='Asheville Pizza and Brewing Co.'
+        rating={5}
+        genre='Pizza'
+        address='675 Merrimon Ave. Asheville, NC 28804'
+        shortDescription='Best Pizza in Asheville, NC'
+        dishes={[]}
+        long={20}
+        lat={10}
+         />
+         <RestaurantCard
+        id='123'
+        imgUrl='https://links.papareact.com/gn7'
+        title='Asheville Pizza and Brewing Co.'
+        rating={5}
+        genre='Pizza'
+        address='675 Merrimon Ave. Asheville, NC 28804'
+        shortDescription='Best Pizza in Asheville, NC'
+        dishes={[]}
+        long={20}
+        lat={10}
+         />
 
 
     </ScrollView>
