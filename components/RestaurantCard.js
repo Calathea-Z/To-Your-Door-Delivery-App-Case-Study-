@@ -1,6 +1,7 @@
 import { TouchableOpacity, Text, Image, View } from 'react-native'
 import React from 'react'
-import { StarIcon, MapPinIcon } from 'react-native-heroicons/outline'
+import { MapPinIcon } from 'react-native-heroicons/outline'
+import { StarIcon } from 'react-native-heroicons/solid'
 
 const RestaurantCard = ({ id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat, }) => {
 
