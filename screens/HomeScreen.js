@@ -31,7 +31,7 @@ function HomeScreen() {
 
   return (
     <SafeAreaView className='bg-white pt-5'>
-      {/* ---Header--- */}
+{/* ---Header--- */}
       <View className='flex-row pb-3 items-center mx-4 space-x-2 px-4'>
         <Image
         source={{uri:'https://links.papareact.com/wru',}}
@@ -57,26 +57,21 @@ function HomeScreen() {
         <AdjustmentsVerticalIcon color='#00CCBB' />
       </View>
 
-      {/* ---Body--- */}
+{/* ---Body--- */}
       <ScrollView className='bg-gray-100'
         contentContainerStyle={{ paddingBottom: 100,}}
       >
         <Categories />
-        <FeaturedRow
-          id='1'
-          title="HOT, Fresh pizza!"
-          description="Gourmet pizza fresh out the oven at 500 degrees"
-        />
-        <FeaturedRow
-          id='2' 
-          title="Cheap Beer"
-          description="Yum BEER"
-        />
-        <FeaturedRow
-          id='4' 
-          title="Even Cheaper Tacos"
-          description="Support your local pizza / taco shop!" 
-        />
+
+        {featuredCategories?.map(category => (
+          <FeaturedRow
+          key={category._id}
+          id={category._id}
+          title={category.name}
+          description={category.short_description}
+          />
+           ))}
+        
       </ScrollView>
 
 
