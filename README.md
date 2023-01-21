@@ -6,6 +6,7 @@ of apps.
 Main Technologies used:
 -Expo CLI
 -React Native
+-React Redux
 -Sanity
 -Tailwind.css
 
