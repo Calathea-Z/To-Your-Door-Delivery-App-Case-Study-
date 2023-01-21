@@ -3,7 +3,7 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectRestaurant } from '../features/restaurantSlice';
-import { removeFromBasket, selectBasketItems } from '../features/basketSlice';
+import { removeFromBasket, selectBasketItems, selectBasketTotal } from '../features/basketSlice';
 import { useMemo } from 'react';
 import { useState } from 'react';
 import { XCircleIcon } from 'react-native-heroicons/solid';
@@ -16,6 +16,7 @@ const BasketScreen = () => {
     const items = useSelector(selectBasketItems);
     const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([]);
     const dispatch = useDispatch();
+    const basketTotal = useSelector(selectBasketTotal);
 
     useMemo(() => {
        const groupedItems = items.reduce((results, item) => {
@@ -56,13 +57,20 @@ const BasketScreen = () => {
                     <Text className='text-[#00CCBB]'>{items.length} x</Text>
                     <Image source={{uri: urlFor(items[0]?.image).url()}} className='h-12 w-12 rounded-full' />
                     <Text className='flex-1'>{items[0]?.name}</Text>
-                    <Text className='text-gray-600'>$ {items[0]?.price}</Text>
+                    <Text className='text-gray-600'>$ {items[0]?.price.toFixed(2)}</Text>
                     <TouchableOpacity>
                         <Text className='text-[#00CCBB] text-xs' onPress={() => dispatch(removeFromBasket({ id:key }))}>Remove</Text>
                     </TouchableOpacity>
                 </View>
             ))}
         </ScrollView>
+        <View>
+            <View>
+                <Text>SubTotal</Text>
+                <Text> $ {basketTotal.toFixed(2)}</Text>
+            </View>
+        </View>
+
       </View>
     </SafeAreaView>
   )
