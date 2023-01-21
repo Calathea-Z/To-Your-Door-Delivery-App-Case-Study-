@@ -25,12 +25,12 @@ export default defineType({
     defineField({
       name: "lat",
       type: "number",
-      title: "Longitude of the Restaurant"
+      title: "Latitude of the Restaurant"
     }),
     defineField({
       name: "long",
       type: "number",
-      title: "Latitude of the Restaurant"
+      title: "Longitude of the Restaurant"
     }),
     defineField({
       name: "address",
