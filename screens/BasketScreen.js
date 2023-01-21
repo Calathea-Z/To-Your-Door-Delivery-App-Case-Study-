@@ -64,13 +64,27 @@ const BasketScreen = () => {
                 </View>
             ))}
         </ScrollView>
-        <View>
-            <View>
-                <Text>SubTotal</Text>
-                <Text> $ {basketTotal.toFixed(2)}</Text>
-            </View>
-        </View>
 
+        <View className='p-5 bg-white mt-5 space-y-4'>
+            <View className='flex-row justify-between'>
+                <Text className='text-gray-400'>SubTotal</Text>
+                <Text className='text-gray-400'> $ {basketTotal.toFixed(2)}</Text>
+            </View>
+
+            <View className='flex-row justify-between'>
+                <Text className='text-gray-400'>Delivery Fee</Text>
+                <Text className='text-gray-400'> $ 2.99 </Text>
+            </View>
+
+            <View className='flex-row justify-between'>
+                <Text>Order Total</Text>
+                <Text className='font-extrabold'> $ {(basketTotal + 2.99).toFixed(2)}</Text>
+            </View>
+
+            <TouchableOpacity onPress={() => navigation.navigate("Preparing")} className='rounded-lg bg-[#00CCBB] p-4'>
+                <Text className='text-center text-white text-lg font-bold'>Place Order!</Text>
+            </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   )
